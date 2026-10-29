@@ -1,0 +1,253 @@
+/* AGENTX - Premium AI SaaS Dark Theme Stylesheet */
+
+/* Global container refinements */
+.main .block-container {
+    padding-top: 1.8rem;
+    padding-bottom: 2.5rem;
+    max-width: 1200px;
+}
+
+/* Typography & General smoothing */
+* {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: -0.01em;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #0e1117;
+}
+::-webkit-scrollbar-thumb {
+    background: #2d3748;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #4a5568;
+}
+
+/* Hero Banner Card */
+.agentx-hero {
+    background: linear-gradient(135deg, rgba(0, 210, 255, 0.08) 0%, rgba(157, 78, 221, 0.08) 100%);
+    border: 1px solid rgba(0, 210, 255, 0.25);
+    border-radius: 16px;
+    padding: 24px 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(8px);
+}
+
+.agentx-hero-title {
+    font-size: 26px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #00d2ff 0%, #9d4edd 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 8px;
+}
+
+.agentx-hero-subtitle {
+    color: #94a3b8;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Modern Metric Cards */
+.metric-card {
+    background: #161b22;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 18px 20px;
+    text-align: left;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.metric-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(0, 210, 255, 0.3);
+}
+.metric-label {
+    color: #8b949e;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 6px;
+}
+.metric-value {
+    color: #f0f6fc;
+    font-size: 28px;
+    font-weight: 700;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.metric-sub {
+    font-size: 12px;
+    color: #00d2ff;
+    font-weight: 500;
+}
+
+/* Section Header Styling */
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding-bottom: 8px;
+}
+.section-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #e6edf3;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Task Item Card */
+.task-card {
+    background: #161b22;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-left: 4px solid #00d2ff;
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin-bottom: 10px;
+    transition: all 0.2s ease;
+}
+.task-card:hover {
+    border-color: rgba(0, 210, 255, 0.3);
+    background: #1c2128;
+}
+.task-card-high {
+    border-left-color: #ff4d4f;
+}
+.task-card-medium {
+    border-left-color: #faad14;
+}
+.task-card-low {
+    border-left-color: #52c41a;
+}
+.task-card-completed {
+    opacity: 0.65;
+    border-left-color: #8c8c8c;
+    text-decoration: line-through;
+}
+
+/* Badges */
+.badge {
+    display: inline-block;
+    padding: 3px 8px;
+    font-size: 11px;
+    font-weight: 600;
+    border-radius: 12px;
+    text-transform: uppercase;
+}
+.badge-high {
+    background: rgba(255, 77, 79, 0.15);
+    color: #ff7875;
+    border: 1px solid rgba(255, 77, 79, 0.3);
+}
+.badge-medium {
+    background: rgba(250, 173, 20, 0.15);
+    color: #ffc069;
+    border: 1px solid rgba(250, 173, 20, 0.3);
+}
+.badge-low {
+    background: rgba(82, 196, 26, 0.15);
+    color: #95de64;
+    border: 1px solid rgba(82, 196, 26, 0.3);
+}
+.badge-category {
+    background: rgba(0, 210, 255, 0.1);
+    color: #00d2ff;
+    border: 1px solid rgba(0, 210, 255, 0.25);
+}
+
+/* Timetable Slot Card */
+.schedule-card {
+    background: #161b22;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 14px 16px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.schedule-time {
+    font-family: monospace;
+    font-size: 13px;
+    color: #00d2ff;
+    font-weight: 600;
+}
+
+/* Activity item */
+.activity-item {
+    font-size: 13px;
+    color: #c9d1d9;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    display: flex;
+    justify-content: space-between;
+}
+.activity-time {
+    color: #8b949e;
+    font-size: 11px;
+}
+
+/* Agent Thought Process Box */
+.agent-thought-box {
+    background: rgba(157, 78, 221, 0.08);
+    border: 1px dashed rgba(157, 78, 221, 0.4);
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-top: 8px;
+    margin-bottom: 12px;
+    font-size: 13px;
+    color: #d8b4fe;
+}
+
+/* Pill status indicators */
+.status-pill-live {
+    background: rgba(82, 196, 26, 0.2);
+    color: #52c41a;
+    border: 1px solid #52c41a;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.status-pill-demo {
+    background: rgba(250, 173, 20, 0.2);
+    color: #faad14;
+    border: 1px solid #faad14;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Note Card */
+.note-card {
+    background: #161b22;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-bottom: 14px;
+}
+.note-summary {
+    background: rgba(0, 210, 255, 0.05);
+    border-left: 3px solid #00d2ff;
+    padding: 8px 12px;
+    margin: 10px 0;
+    font-size: 13px;
+    color: #c9d1d9;
+    border-radius: 0 6px 6px 0;
+}
+
